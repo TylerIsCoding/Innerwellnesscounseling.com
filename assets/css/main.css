@@ -245,7 +245,6 @@ a {
     border-bottom-color 0.2s ease-in-out;
   -ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-  border-bottom: dotted 1px;
   text-decoration: none;
 }
 
@@ -4279,6 +4278,10 @@ body.header-alt .dropotron.level-0 {
   #footer {
     padding: 4rem 0 2rem 0;
   }
+
+  ul.footer-icons {
+    flex-direction: column;
+  }
 }
 
 /* Nav Panel */
@@ -4438,4 +4441,26 @@ body.is-navPanel-visible #navPanel {
   transform: translateX(0);
   box-shadow: 0 0 6rem 0 rgba(0, 0, 0, 0.125);
   visibility: visible;
+}
+
+/* Custom Classes */
+
+ul.footer-icons {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+img.footer-image {
+  height: 5rem;
+}
+
+img.footer-image.zen {
+  background-color: rgb(0, 79, 88);
+}
+
+img.footer-image.den {
+  height: 7rem;
 }
