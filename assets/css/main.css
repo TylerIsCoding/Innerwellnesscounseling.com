@@ -3341,6 +3341,7 @@ table.alt tbody tr td {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
+  justify-content: center;
   margin: 0 0 2rem 0;
 }
 
@@ -3503,7 +3504,7 @@ table.alt tbody tr td {
   background-image: linear-gradient(
       90deg,
       rgba(58, 58, 58, 0.6),
-      rgba(58, 58, 58, 0.6)
+      rgba(58, 58, 58, 0.3)
     ),
     url('../../images/banner1.jpg');
   background-position: center, center;
@@ -4272,6 +4273,9 @@ body.header-alt .dropotron.level-0 {
     padding: 6rem 0 4rem 0;
     background-attachment: scroll, scroll;
   }
+  li.about-me-items {
+    width: unset;
+  }
 }
 
 @media screen and (max-width: 736px) {
@@ -4385,7 +4389,6 @@ body.header-alt .dropotron.level-0 {
   right: 0;
   text-align: right;
   top: 0;
-  vertical-align: middle;
   width: 7rem;
 }
 
@@ -4445,6 +4448,21 @@ body.is-navPanel-visible #navPanel {
 
 /* Custom Classes */
 
+li.about-me-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 375px;
+}
+
+@media screen and (max-width: 1280px) {
+  li.about-me-items {
+    width: unset;
+  }
+}
+
 ul.footer-icons {
   list-style: none;
   display: flex;
@@ -4463,4 +4481,8 @@ img.footer-image.zen {
 
 img.footer-image.den {
   height: 7rem;
+}
+
+li.sub-button {
+  margin: 2rem;
 }
