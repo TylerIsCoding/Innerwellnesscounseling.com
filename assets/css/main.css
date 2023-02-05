@@ -4448,6 +4448,10 @@ body.is-navPanel-visible #navPanel {
 
 /* Custom Classes */
 
+img.headshot {
+  object-position: top center;
+}
+
 li.about-me-items {
   display: flex;
   flex-direction: column;
