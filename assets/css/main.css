@@ -4481,13 +4481,18 @@ li.sub-button {
   margin: 2rem;
 }
 
+.btn-center {
+  display: flex;
+  justify-content: center;
+}
+
 .faith-list {
   margin: 0 auto;
   width: 70%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .faith-list > ul > li {
