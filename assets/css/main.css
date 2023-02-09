@@ -7,6 +7,12 @@
 	License: pixelarity.com/license
 */
 
+/* Colors */
+
+root {
+  --main-pink: #e3a29a;
+}
+
 html,
 body,
 div,
@@ -514,7 +520,7 @@ header.major h3:after,
 header.major h4:after,
 header.major h5:after,
 header.major h6:after {
-  background-color: #4797ec;
+  background-color: var(--main-pink);
   background-image: url('../../images/overlay.png'),
     linear-gradient(90deg, rgba(71, 151, 236, 0), #884beb 90%);
   background-size: auto, auto;
@@ -3898,7 +3904,7 @@ body {
   position: absolute;
 }
 
-#header.alt:before {
+/* #header.alt:before {
   background-color: #4797ec;
   background-image: url('../../images/overlay.png'),
     linear-gradient(90deg, rgba(71, 151, 236, 0), #884beb 90%);
@@ -3911,7 +3917,7 @@ body {
   position: absolute;
   top: 0;
   width: 100%;
-}
+} */
 
 #header + #banner {
   margin-top: -3.5rem;
@@ -4507,6 +4513,26 @@ li.sub-button {
 .hipaa-right {
   text-align: right;
   padding-right: 10rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header-icon {
+  height: 2rem;
+  padding-right: 2rem;
+}
+
+.main-icon {
+  height: 10rem;
+  margin: 2rem;
 }
 
 @media screen and (max-width: 1280px) {
