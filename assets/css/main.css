@@ -2609,8 +2609,10 @@ dl {
 }
 
 dl dt {
+  font-size: 1.3rem;
+  text-decoration: underline;
   display: block;
-  font-weight: 400;
+  font-weight: 500;
   margin: 0 0 1rem 0;
 }
 
@@ -4563,4 +4565,10 @@ li.sub-button {
   .hipaa-right {
     padding: 5px;
   }
+}
+
+.iframe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
