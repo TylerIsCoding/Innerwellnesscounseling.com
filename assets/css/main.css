@@ -2973,12 +2973,11 @@ table.alt tbody tr td {
 .wrapper.style2 button.primary,
 .wrapper.style2 .button.primary {
   background-color: var(--main-color);
-  background-image: url('../../images/overlay.png'),
-    linear-gradient(45deg, rgba(71, 151, 236, 0), var(--second-main-color) 80%);
+  background-image: url('../../images/overlay.png');
   background-size: auto, auto;
   background-repeat: repeat, no-repeat;
   box-shadow: 0 0.5rem 1.75rem 0 rgba(0, 0, 0, 0.25);
-  color: var(--second-main-color) !important;
+  color: var(--secondary-color) !important;
 }
 
 .wrapper.style2 input[type='submit'].primary:hover,
@@ -2986,7 +2985,8 @@ table.alt tbody tr td {
 .wrapper.style2 input[type='button'].primary:hover,
 .wrapper.style2 button.primary:hover,
 .wrapper.style2 .button.primary:hover {
-  background-color: #6cacf0;
+  background-color: var(--secondary-color);
+  color: white !important;
 }
 
 .wrapper.style2 input[type='submit'].primary:hover:active,
