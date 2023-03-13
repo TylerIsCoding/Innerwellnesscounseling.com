@@ -17,7 +17,7 @@
   --button-bright: rgb();
   --button-bright-alt: rgb();
   --button-dark: rgb(145 170 153);
-  --button-dark-alt: rgb();
+  --button-dark-alt: rgb(195, 226, 205);
   --second-main-color: rgb(238 250 247);
   --secondary-color: #2d5151;
 }
@@ -2119,7 +2119,7 @@ input[type='reset'],
 input[type='button'],
 button,
 .button {
-  background-color: transparent;
+  background-color: var(--nav-color);
   box-shadow: inset 0 0 0 1px #000000;
   color: #000000 !important;
 }
@@ -2129,8 +2129,9 @@ input[type='reset']:hover,
 input[type='button']:hover,
 button:hover,
 .button:hover {
-  box-shadow: inset 0 0 0 1px var(--main-color);
-  color: white !important;
+  background-color: var(--main-color);
+  box-shadow: inset 0 0 0 1px var(--secondary-color);
+  color: var(--secondary-color) !important;
 }
 
 input[type='submit']:hover:active,
@@ -2146,9 +2147,8 @@ input[type='reset'].primary,
 input[type='button'].primary,
 button.primary,
 .button.primary {
-  background-color: var(--main-color);
-  background-image: url('../../images/overlay.png'),
-    linear-gradient(45deg, rgba(71, 151, 236, 0), var(--second-main-color) 80%);
+  background-color: var(--button-dark);
+  background-image: url('../../images/overlay.png');
   background-size: auto, auto;
   background-repeat: repeat, no-repeat;
   box-shadow: 0 0.5rem 1.75rem 0 rgba(0, 0, 0, 0.25);
@@ -2160,8 +2160,7 @@ input[type='reset'].primary:hover,
 input[type='button'].primary:hover,
 button.primary:hover,
 .button.primary:hover {
-  background-color: var(--second-main-color);
-  color: white !important;
+  background-color: var(--button-dark-alt);
 }
 
 input[type='submit'].primary:hover:active,
@@ -2169,7 +2168,7 @@ input[type='reset'].primary:hover:active,
 input[type='button'].primary:hover:active,
 button.primary:hover:active,
 .button.primary:hover:active {
-  background-color: var(--second-main-color);
+  background-color: var(--secondary-color);
   color: white !important;
 }
 
@@ -3245,14 +3244,11 @@ table.alt tbody tr td {
   -webkit-flex-shrink: 0;
   -ms-flex-shrink: 0;
   flex-shrink: 0;
-  border-radius: 100%;
-  box-shadow: 0 1rem 3rem 0 rgba(0, 0, 0, 0.25);
   margin: 0 6rem 0 0;
-  width: 25rem;
+  width: 10rem;
 }
 
 .spotlights section .image img {
-  border-radius: 100%;
   display: block;
   width: 100%;
 }
@@ -3578,8 +3574,8 @@ table.alt tbody tr td {
 #banner input[type='button'].primary:hover,
 #banner button.primary:hover,
 #banner .button.primary:hover {
-  background-color: var(--second-main-color);
-  color: white !important;
+  background-color: var(--button-dark-alt);
+  color: black !important;
 }
 
 #banner input[type='submit'].primary:hover:active,
@@ -4132,11 +4128,11 @@ body {
 }
 
 .dropotron li.active > a {
-  color: var(--main-color);
+  color: var(--secondary-color);
 }
 
 .dropotron a {
-  color: #000000;
+  color: #0000007d;
   padding: 0.325rem 0.875rem;
   text-decoration: none !important;
   border: 0;
@@ -4146,7 +4142,7 @@ body {
 .dropotron a:active,
 .dropotron a:hover,
 .dropotron a:focus {
-  color: var(--main-color);
+  color: var(--secondary-color);
 }
 
 body.header-alt .dropotron.level-0 {
