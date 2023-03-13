@@ -11,8 +11,14 @@
 /* Colors */
 
 :root {
-  --main-color: #a3c564;
-  --second-main-color: #8fae57;
+  --main-color: rgb(238, 250, 247);
+  --nav-color: rgb(162 191 171);
+  --nav-selected: rgba(105, 126, 112, 0.309);
+  --button-bright: rgb();
+  --button-bright-alt: rgb();
+  --button-dark: rgb(145 170 153);
+  --button-dark-alt: rgb();
+  --second-main-color: rgb(238 250 247);
   --secondary-color: #2d5151;
 }
 
@@ -3559,13 +3565,12 @@ table.alt tbody tr td {
 #banner input[type='button'].primary,
 #banner button.primary,
 #banner .button.primary {
-  background-color: var(--main-color);
-  background-image: url('../../images/overlay.png'),
-    linear-gradient(45deg, rgba(71, 151, 236, 0), var(--second-main-color) 80%);
+  background-color: var(--button-dark);
+  background-image: url('../../images/overlay.png');
   background-size: auto, auto;
   background-repeat: repeat, no-repeat;
   box-shadow: 0 0.5rem 1.75rem 0 rgba(0, 0, 0, 0.25);
-  color: var(--secondary-color) !important;
+  color: black !important;
 }
 
 #banner input[type='submit'].primary:hover,
@@ -3803,9 +3808,8 @@ body {
 #header {
   background-color: #3a3a3a;
   color: #2d5151;
-  background-color: #a3c564;
-  background-image: url('../../images/overlay.png'),
-    linear-gradient(90deg, rgba(71, 151, 236, 0), #a3c564 90%);
+  background-color: var(--nav-color);
+  background-image: url('../../images/overlay.png');
   background-size: auto, auto;
   background-repeat: repeat, no-repeat;
   -moz-align-items: center;
@@ -4079,7 +4083,7 @@ body {
 
 #nav > ul > li.current a,
 #nav > ul > li.current span {
-  background-color: #d0f68836;
+  background-color: var(--nav-selected);
 }
 
 #nav > ul > li.active a,
